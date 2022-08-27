@@ -1,0 +1,67 @@
+@use '../globals/' as v;
+@use '../util/' as u;
+
+
+#tournaments {
+    background: url('https://onclickwebdesign.com/wp-content/uploads/footer_bg_pattern.png') 0 0 repeat;
+    padding: u.rem(125) 0 u.rem(105);
+}
+
+#tournaments .flex {
+    position: relative;
+}
+
+#tournaments .badge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+#tournaments .badge.tournaments {
+    top: u.rem(-32);
+    left: u.rem(15);
+}
+
+#tournaments .box {
+    background-color: #252525;
+    padding: u.rem(70) u.rem(20) u.rem(40);
+    flex-basis: 45%;
+    position: relative;
+}
+
+#tournaments .box .tournaments-image {
+    float: left;
+    width: 30%;
+}
+
+#tournaments .box .tournaments-image img {
+    width: 100%;
+}
+
+#tournaments .box .tournaments-content {
+    float: left;
+    margin-left: u.rem(25);
+    width: 60%;
+}
+
+#tournaments .box .tournaments-content h3 {
+    color: #FFB320;
+    margin-top: 0;
+}
+
+#tournaments .box .tournaments-content label {
+    color: #999;
+    font-size: 0.75em;
+}
+
+#tournaments .box .tournaments-content label.prizes {
+    color: #FFB320;
+    display: inline-block;
+    margin-top: u.rem(12);
+}
+
+#tournaments .box .tournaments-content strong {
+    color: #eee;
+    font-size: 0.75em;
+}

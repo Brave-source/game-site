@@ -1,0 +1,37 @@
+@use '../util/' as u;
+
+h1, h2, h3, h4, h5 {
+    line-height: 1.5;
+    font-weight: 300;
+    margin: u.rem(8) 0;
+}
+
+h1 {
+    font-size: u.em(40);
+}
+
+h2 {
+    font-size: u.em(32);
+}
+
+h3 {
+    font-size: u.em(25.6);
+}
+
+h4 {
+    font-size: u.em(22.4);
+}
+
+h5 {
+    font-size: u.em(19.2);
+}
+
+a {
+    text-decoration: none;
+}
+
+p, label, strong {
+    line-height: 2;
+    font-size: u.em(13.6);
+    font-weight: 300;
+}

@@ -1,0 +1,56 @@
+@use '../globals/' as v;
+@use '../util/' as u;
+
+#recent-reviews {
+    background: url('https://onclickwebdesign.com/wp-content/uploads/recent_reviews_bg.png') top right no-repeat;
+    background-size: cover;
+    padding: u.rem(75) 0 u.rem(50);
+}
+
+#recent-reviews h1 {
+    text-align: center;
+    margin-bottom: 1.65em;
+}
+
+#recent-reviews .box {
+    flex-basis: 23%;
+    position: relative;
+    text-align: center;
+}
+
+#recent-reviews .box .rating-badge {
+    border-radius: u.rem(28);
+    padding: u.rem(13);
+    font-size: 1.1em;
+    color: #eee;
+    font-weight: 600;
+    background-color: #FFB320;
+    position: absolute;
+    top: u.rem(-30);
+    left: u.rem(30);
+}
+
+#recent-reviews .box .rating-badge.purple {
+    background-color: $badge-racing-clr;
+}
+
+#recent-reviews .box .rating-badge.green {
+    background-color: $badge-strategy-clr;
+}
+
+#recent-reviews .box .rating-badge.violet {
+    background-color: $badge-violet;
+}
+
+#recent-reviews .box .recent-reviews-image {
+    margin-bottom: 0.75em;
+    overflow: hidden;
+}
+
+#recent-reviews .box .recent-reviews-image img {
+    width: 100%;
+}
+
+#recent-reviews .box p {
+    color: #999;
+}

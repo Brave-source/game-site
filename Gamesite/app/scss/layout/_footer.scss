@@ -1,0 +1,35 @@
+@use '../globals/' as v;
+@use '../util/' as u;
+
+footer {
+    background-color: #252525;
+    padding: u.rem(25) 0 u.rem(20);
+}
+
+footer small {
+    color: #ddd;
+    font-size: 0.9em;
+}
+
+footer small .footer-heart {
+    font-size: u.rem(16);
+}
+
+footer small a {
+    color: #007BDC;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 0 u.rem(12);
+}
+
+footer ul li a {
+    color: #ddd;
+    font-size: 0.8em;
+}

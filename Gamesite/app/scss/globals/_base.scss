@@ -1,0 +1,61 @@
+@use 'variables' as v;
+@use '../util/' as u;
+
+body {
+    font-family: v.$bg-font-family;
+    margin: 0;
+}
+
+.flex {
+    display: flex;
+    max-width: u.rem(1200);
+    margin: 0 auto;
+    padding: 0 u.rem(15);
+    justify-content: space-between;
+}
+
+.badge {
+    padding: u.rem(9) u.rem(20);
+    color: v.$bagde-clr;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    font-size: 0.75em;
+}
+
+.badge.new {
+    background-color: v.$bagde-new-clr;
+}
+
+.badge.strategy {
+    background-color: v.$badge-strategy-clr;
+}
+
+.badge.racing {
+    background-color: v.$badge-racing-clr;
+}
+
+.badge.rpg,
+.badge.adventure {
+    background-color: v.$bage-rpg-adventure-clr;
+}
+
+.badge.tournaments {
+    background-color: v.$badge-tournaments-clr;
+}
+
+.badge.premium-tournament {
+    background-color: v.$badge-prem-tournament-clr;
+    color: #252525;
+}
+
+.shade {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+}

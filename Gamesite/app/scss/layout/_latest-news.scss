@@ -1,0 +1,37 @@
+@use '../globals/' as v;
+@use '../util/' as u;
+
+#latest-news {
+    margin-bottom: 75px;
+}
+
+#latest-news .flex {
+    justify-content: flex-start;
+    max-width: 100%;
+    padding: 0;
+}
+
+#latest-news .flex h5 {
+    flex-basis: 25%;
+    background-color: v.$badge-prem-tournament-clr;
+    padding: u.rem(25);
+    margin: 0;
+    text-align: right;
+    color: #eee;
+    font-size: 1.2em;
+}
+
+#latest-news-container {
+    background-color: #131313;
+    position: relative;
+    flex-basis: 75%;
+    padding: u.rem(25);
+}
+
+#latest-news-container .badge {
+    margin-right: u.rem(20);
+}
+
+#latest-news-container .latest-news-text {
+    color: #eee;
+}

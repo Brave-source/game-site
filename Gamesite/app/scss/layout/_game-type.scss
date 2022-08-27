@@ -1,0 +1,55 @@
+@use '../globals/' as v;
+@use '../util/' as u;
+
+
+#game-types-boxes {
+    margin-bottom: u.rem(75);
+}
+
+#game-types-boxes .box {
+    flex-basis: 25%;
+    position: relative;
+    height: u.rem(380);
+}
+
+#game-types-boxes .box.new {
+    background: url('https://onclickwebdesign.com/wp-content/uploads/wow_lady.jpg') top center no-repeat;
+    background-size: cover;
+}
+
+#game-types-boxes .box.strategy {
+    background: url('https://onclickwebdesign.com/wp-content/uploads/robotic_ninja.jpg') top center no-repeat;
+    background-size: cover;
+}
+
+#game-types-boxes .box.rpg {
+    background: url('https://onclickwebdesign.com/wp-content/uploads/jeep_armed.jpg') top center no-repeat;
+    background-size: cover;
+}
+
+#game-types-boxes .box.racing {
+    background: url('https://onclickwebdesign.com/wp-content/uploads/sports_car.jpg') top center no-repeat;
+    background-size: cover;
+}
+
+#game-types-boxes .box .badge {
+    position: relative;
+    z-index: 2;
+    top: u.rem(20);
+    left: u.rem(20);
+}
+
+#game-types-boxes .box .contents {
+    position: absolute;
+    z-index: 2;
+    bottom: u.rem(20);
+    left: 0;
+    color: #eee;
+    padding: 0 u.rem(35) 0 u.rem(25);
+}
+
+#game-types-boxes .box .contents a {
+    font-size: 0.8em;
+    font-weight: 300;
+    color: #999;
+}
